@@ -231,7 +231,10 @@
         </defs>
       </svg>
       <h1>Hello, {{ title() }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <h2>Direccion: {{direccion.getIdDireccion}}</h2>
+      Ciudad: <input [(ngModel)] = "direccion.getCiudad"><br>
+      Cod Postal: <input [(ngModel)] = "direccion.getCodPostal"><br>
+      Municipio: <input [(ngModel)] = "direccion.getMunicipio"><br>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
