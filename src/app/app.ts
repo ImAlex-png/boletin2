@@ -56,5 +56,14 @@ export class App {
     // alumnosDistintos = Array.from(new Set(alumnosDistintos))
     return alumnosDistintos;
   }
+
+  public getAsignaturaByAlumno(dni: string){
+    let matriculas : Matricula[] = [];
+    for(let i = 0; i < this.matriculas.length; i++){
+      if(this.matriculas[i].alumno.dni == dni){
+        matriculas.push(this.matriculas[i]);
+      }
+    }
+  }
   
 }
