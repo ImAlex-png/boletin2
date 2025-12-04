@@ -235,7 +235,32 @@
       Ciudad: <input [(ngModel)] = "direccion.getCiudad"><br>
       Cod Postal: <input [(ngModel)] = "direccion.getCodPostal"><br>
       Municipio: <input [(ngModel)] = "direccion.getMunicipio"><br>
+      <br><br><br>
+      @for (alumno of getAlumnos(); track alumno) {
+        <div class="caja">
+          <h2 class="titulo">
+          {{alumno.nombre}}
+          <img src="data:image/jpeg;base64,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" style="height: 100px; border-radius: 10px;">
+        </h2>
+        <table>
+          <thead border = "1">
+            <tr >
+              <th>Asignatura</th>
+              <th>Descripcion asignatura</th>
+              <th>Num horas</th>
+              <th>Profesor imparte</th>
+            <tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+        </div>
+        <br>
+        
+      }
     </div>
+
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">

@@ -1,0 +1,94 @@
+{
+  "direcciones": [
+    {
+      "id": 1,
+      "codigoPostal": "41520",
+      "provincia": "Sevilla",
+      "municipio": "El Viso del Alcor",
+      "localidad": "Sevilla"
+    },
+    {
+      "id": 2,
+      "codigoPostal": "41520",
+      "provincia": "Sevilla",
+      "municipio": "El Viso del Alcor",
+      "localidad": "Sevilla"
+    }
+  ],
+  "alumnos": [
+    {
+      "dni": "dni",
+      "nombre": "Alejandro",
+      "apellidos": "Jimenez Carballar",
+      "fechaNacimiento": "2025-01-01T00:00:00.000Z",
+      "direccionId": 1
+    },
+    {
+      "dni": "dniSalva",
+      "nombre": "Salvador",
+      "apellidos": "Peinado Conceicao",
+      "fechaNacimiento": "2025-01-01T00:00:00.000Z",
+      "direccionId": 2
+    }
+  ],
+  "profesores": [
+    {
+      "dni": "dniProfe1",
+      "nombre": "Octavio",
+      "apellidos": "Montero Oliva",
+      "telefono": "123456789",
+      "salario": 1200
+    },
+    {
+      "dni": "dniProfe2",
+      "nombre": "Jesus",
+      "apellidos": "Pepe pepesito",
+      "telefono": "987654321",
+      "salario": 2500
+    }
+  ],
+  "asignaturas": [
+    {
+      "codigo": "DAWEB",
+      "nombre": "Cositas de DAWEB",
+      "horas": 300,
+      "profesorDni": "dniProfe1"
+    },
+    {
+      "codigo": "DIW",
+      "nombre": "Interfaces",
+      "horas": 450,
+      "profesorDni": "dniProfe2"
+    }
+  ],
+  "matriculas": [
+    {
+      "alumnoDni": "dni",
+      "asignaturaCodigo": "DAWEB",
+      "nota1": 10,
+      "nota2": 8,
+      "notaFinal": 8
+    },
+    {
+      "alumnoDni": "dniSalva",
+      "asignaturaCodigo": "DIW",
+      "nota1": 7,
+      "nota2": 6,
+      "notaFinal": 5
+    },
+    {
+      "alumnoDni": "dni",
+      "asignaturaCodigo": "DIW",
+      "nota1": 7,
+      "nota2": 8,
+      "notaFinal": 1
+    },
+    {
+      "alumnoDni": "dniSalva",
+      "asignaturaCodigo": "DAWEB",
+      "nota1": 5,
+      "nota2": 4,
+      "notaFinal": 6
+    }
+  ]
+}

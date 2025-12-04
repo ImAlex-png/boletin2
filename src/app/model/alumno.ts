@@ -22,4 +22,10 @@ export class Alumno {
     set apellidos(apellidos : string ) { this._apellidos = apellidos}
     set fechaNacimiento(fechaNacimiento : Date ) { this._fechaNacimiento = fechaNacimiento}
     set direccion(direccion : Direccion ) { this._direccion = direccion}
+
+    public getEdad() : number{
+        let año = this._fechaNacimiento.getFullYear();
+        let añoAhora = new Date().getFullYear();
+        return añoAhora - año;
+    }
 }
