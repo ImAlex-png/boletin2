@@ -252,7 +252,15 @@
             <tr>
           </thead>
           <tbody>
-            @for (matricula of getMatriculaByAlumno({{alumno.dni}}); track $index) {}
+            @for (item of getMatriculaByAlumno(alumno.dni); track matricula) {
+              <tr>
+                <td>{{item.asignatura.nombre}}</td>
+                <td>{{item.asignatura.descripcion}}</td>
+                <td>{{item.asignatura.numHoras}}</td>
+                <td>{{item.asignatura.profesor}}</td>
+              </tr>
+              
+            }
           </tbody>
         </table>
         </div>

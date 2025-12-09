@@ -57,13 +57,15 @@ export class App {
     return alumnosDistintos;
   }
 
-  public getAsignaturaByAlumno(dni: string){
-    let matriculas : Matricula[] = [];
+public getMatriculaByAlumno(dni: string): Matricula[]{
+    let matriculas: Matricula[] = [];
     for(let i = 0; i < this.matriculas.length; i++){
       if(this.matriculas[i].alumno.dni == dni){
         matriculas.push(this.matriculas[i]);
       }
     }
+
+    return matriculas;
   }
   
 }
